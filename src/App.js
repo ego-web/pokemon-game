@@ -3,6 +3,8 @@ import './App.css';
 import { Header } from './components/Header'
 import { Layout } from './components/Layout'
 import { Footer } from './components/Footer'
+import Picture from './assets/bg3.jpg'
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +23,7 @@ function App() {
         </a>
       </header> */}
       <Header />
-      <Layout />
+      <Layout urlBg = {Picture} />
       <Layout />
       <Layout />
       <Footer />

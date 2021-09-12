@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const Header = ({ title, descr }) => {
+export const Header = (props) => {
+	if (!props) return;
+	const { title, descr } = props;
 	return (
 		<header class="root">
 			<div class="forest" />

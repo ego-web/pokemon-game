@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { Layout } from './components/Layout'
 import { Footer } from './components/Footer'
 import Picture from './assets/bg3.jpg'
+import Picture2 from './assets/bg2.jpg'
 
 function App() {
   return (
@@ -22,10 +23,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Header />
-      <Layout urlBg = {Picture} />
-      <Layout />
-      <Layout />
+      <Header title="This is header" descr="this is header"/>
+      <Layout urlBg = {Picture} title="Picture one" descr="Picture one" colorBg="green"/>
+      <Layout  title="Layout two" descr="Layout two" colorBg="red" />
+      <Layout urlBg = {Picture2} title="Picture two" descr="Picture two" colorBg="blue" />
       <Footer />
     </div>
   );
